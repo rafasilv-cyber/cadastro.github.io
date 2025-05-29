@@ -9,19 +9,22 @@
    <div class="container">
     <nav>
         <ul>
-            <li><a href="index.html">Apresentação do Evento</a></li>
-            <li><a href="cadastro.html">Cadastro</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cadastro.php">Cadastro de Participantes</a></li>
+            <li><a href="cadastropa.php">Cadastro de Palestras</a></li>
+            <li><a href="contato.php">Contato</a></li>
         </ul>
     </nav>
     
     <div class="logo">
+        <a href="index.html">
         <img src="https://transparencia.sp.senai.br/Content/img/logo-senai.png" alt="Logo do Senai">
+        </a>
     </div>
 
     <header>
         <h1>Cadastro</h1>
-        <p>Bem-vindo à a nossa seção de cadastro!</p>
+        <p>Bem-vindo à a nossa seção de cadastro de participante!</p>
     </header>
 
 <section>
@@ -34,7 +37,7 @@
     <input type="number" id="idade" name="idade" required min="0" placeholder="Digite sua idade">
 <br><br>
     <label for="telefone">Telefone:</label>
-    <input type="tel" id="telefone" name="telefone" required placeholder="(XX) XXXXX-XXXX" pattern="\(\d{2}\)\s?\d{4,5}-\d{4}">
+    <input type="tel" id="telefone" name="telefone" required placeholder="(XX) XXXXX-XXXX">
 <br><br>
     <label for="palestra">Selecione uma palestra/oficina:</label>
     <select id="palestra" name="palestra" required>
@@ -64,6 +67,8 @@
 
 <footer>
     <p>&copy; 2025 RafaelF. Todos os direitos reservados.</p>
+</footer>
+
 </div> 
 </body>
 </html>
