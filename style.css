@@ -1,48 +1,237 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@600&display=swap');
-*{
+/* Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #222;
+    animation: fadeIn 1s ease-in;
 }
 
-h1, h2 {
-    font-family: 'Playfair Display', serif;
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
-.container{
-    max-width: 1400px;
+.container {
+    max-width: 1200px;
     margin: auto;
-    padding: 0 4%;
+    padding: 20px;
 }
-nav{
+
+/* Logo */
+.logo img {
+    width: 180px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Navegação */
+nav ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    background-color: #b30000;
+    padding: 12px;
+    border-radius: 10px;
+    margin-bottom: 40px;
 }
-.logo{
-    width: 170px;
+
+nav ul li {
+    margin: 10px 20px;
 }
-.logo img{
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav ul li a::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
     width: 100%;
 }
 
-nav ul{
-    list-style: none;
-    display: flex;
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-nav ul li{
-    padding: 0 15px;
-    font-size: 15px;
+header h1 {
+    font-size: 2.5rem;
+    color: #b30000;
+    margin-bottom: 10px;
 }
-nav ul li a{
-    color: black;
-    text-decoration: none;
+
+header p {
+    color: #555;
+    font-size: 1.1rem;
 }
-header{
-    
+
+/* Seção com imagem + formulário */
+section.cadastro {
+    display: flex;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: slideIn 1.2s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Imagem temática de tecnologia */
+section.cadastro .image-side {
+    flex: 0.6;
+    background: url('https://yanksolutions.com.br/wp-content/uploads/2022/11/capa-blog-tendencias-2023.png') no-repeat center center;
+    background-size: cover;
+    min-height: 100%;
+}
+
+/* Formulário */
+section.cadastro form {
+    flex: 1;
+    padding: 40px;
+    background-color: #fff5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #b30000;
+}
+
+form input,
+form select {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+    border-color: #b30000;
+    outline: none;
+}
+
+form button {
+    background-color: #b30000;
+    color: white;
+    padding: 14px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #990000;
+}
+
+form p {
+    font-size: 0.9rem;
+    color: #444;
+    margin-top: 10px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+
+/* Responsividade */
+@media (max-width: 900px) {
+    section.cadastro {
+        flex-direction: column;
+    }
+
+    section.cadastro .image-side {
+        height: 250px;
+    }
+
+    section.cadastro form {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    form input,
+    form select {
+        font-size: 0.95rem;
+    }
+
+    form button {
+        font-size: 0.95rem;
+    }
+}
+@media (max-width: 400px) {
+    .logo img {
+        width: 150px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    form input,
+    form select {
+        padding: 10px;
+    }
+
+    form button {
+        padding: 12px;
+    }
 }

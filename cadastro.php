@@ -7,6 +7,12 @@
 </head>
 <body>
    <div class="container">
+    
+   <div class="logo">
+        <a href="index.html">
+        <img src="https://transparencia.sp.senai.br/Content/img/logo-senai.png" alt="Logo do Senai">
+        </a>
+        
     <nav>
         <ul>
             <li><a href="index.html">Início</a></li>
@@ -16,10 +22,7 @@
         </ul>
     </nav>
     
-    <div class="logo">
-        <a href="index.html">
-        <img src="https://transparencia.sp.senai.br/Content/img/logo-senai.png" alt="Logo do Senai">
-        </a>
+    
     </div>
 
     <header>
@@ -28,6 +31,8 @@
     </header>
 
 <section>
+<section class="cadastro">
+  <div class="image-side"></div>
 
 <form action="recebimento.php" method="post">
     <label for="nome_completo">Nome Completo:</label>
@@ -55,9 +60,11 @@
         <option value="pai">Pai</option>
         <option value="responsavel">Responsável</option>
     </select>
+
 <br><br>
     <button type="submit">Cadastrar</button>
 </form>
+</section>
 <br>
     <p>Ao clicar em "Cadastrar", você concorda com os termos e condições do evento.</p>
 

@@ -8,6 +8,7 @@
 <body>
     
    <div class="container">
+
     <div class="logo">
         <a href="index.html">
         <img  src="https://i0.wp.com/innovationweeksjc.com.br/wp-content/uploads/2024/08/Logo_SENAI.png?fit=600%2C400&ssl=1" alt="Logo do Senai">
@@ -21,7 +22,7 @@
             <li><a href="contato.php">Contato</a></li>
         </ul>
     </nav>
-
+<br>
     <header>
         <h1>Feira Tecnológica</h1>
         <p>Ainda falta algo?</p>
@@ -37,7 +38,7 @@
         <br><br>
 
         <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" required placeholder="(XX) XXXXX-XXXX" pattern="\(\d{2}\)\s?\d{4,5}-\d{4}">
+        <input type="tel" id="telefone" name="telefone" required placeholder="(XX) XXXXX-XXXX">
         <br><br>
 
         <label for="endereco">Endereço:</label>
@@ -57,7 +58,7 @@
         <br><br>
 
         <label for="cep">CEP:</label>
-        <input type="text" id="cep" name="cep" required placeholder="XXXXX-XXX" pattern="\d{5}-\d{3}">
+        <input type="text" id="cep" name="cep" required placeholder="XXXXX-XXX">
         <br><br>
 
         <button type="submit">Enviar</button>

@@ -31,7 +31,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </head>
 <body>
    <div class="container">
-    <nav>
+    
+    <div class="logo">
+        <a href="index.html">
+        <img src="https://transparencia.sp.senai.br/Content/img/logo-senai.png" alt="Logo do Senai">
+        </a>
+    </div>
+    
+<nav>
         <ul>
             <li><a href="index.html">Início</a></li>
             <li><a href="cadastro.php">Cadastro de Participantes</a></li>
@@ -39,13 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <li><a href="contato.php">Contato</a></li>
         </ul>
     </nav>
-    
-    <div class="logo">
-        <a href="index.html">
-        <img src="https://transparencia.sp.senai.br/Content/img/logo-senai.png" alt="Logo do Senai">
-        </a>
-    </div>
-
+    <br>
     <header>
         <h1>Cadastro</h1>
         <p>Bem-vindo à nossa seção de cadastro!</p>
