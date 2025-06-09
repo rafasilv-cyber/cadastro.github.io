@@ -49,6 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <li><a href="cadastro.php">Cadastro de Participantes</a></li>
             <li><a href="cadastropa.html">Cadastro de Palestras</a></li>
             <li><a href="contato.php">Contato</a></li>
+            <li><a href="mapa.html">Mapa do Evento</a></li>
         </ul>
     </nav>
 
